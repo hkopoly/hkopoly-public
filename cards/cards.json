@@ -1,0 +1,166 @@
+{
+  "spacePlaceholder": "{space}",
+  "chance": [
+    {
+      "text": "前進至{space}，領取 HK$300。",
+      "action": "move",
+      "target": 0,
+      "collectGo": true
+    },
+    {
+      "text": "前進至{space}。如經過起點，領取 HK$200。",
+      "action": "move",
+      "target": 13
+    },
+    {
+      "text": "前進至{space}。如經過起點，領取 HK$200。",
+      "action": "move",
+      "target": 37
+    },
+    {
+      "text": "前進至最近的港鐵線。租金加倍。",
+      "action": "nearestRailroad",
+      "payDouble": true
+    },
+    {
+      "text": "前進至最近的港鐵線。",
+      "action": "nearestRailroad"
+    },
+    {
+      "text": "銀行派息 HK$50。",
+      "action": "money",
+      "amount": 50
+    },
+    {
+      "text": "出獄許可證。",
+      "action": "jailCard"
+    },
+    {
+      "text": "後退三格。",
+      "action": "back",
+      "spaces": 3
+    },
+    {
+      "text": "入獄，不得經過起點。",
+      "action": "jail"
+    },
+    {
+      "text": "一般維修：每間房屋 HK$25，每間酒店 HK$100。",
+      "action": "repairs",
+      "house": 25,
+      "hotel": 100
+    },
+    {
+      "text": "繳付貧民稅 HK$15。",
+      "action": "money",
+      "amount": -15
+    },
+    {
+      "text": "前往{space}。如經過起點，領取 HK$200。",
+      "action": "move",
+      "target": 18
+    },
+    {
+      "text": "你當選主席，向每位玩家支付 HK$50。",
+      "action": "payEach",
+      "amount": 50
+    },
+    {
+      "text": "樓宇貸款到期，收取 HK$150。",
+      "action": "money",
+      "amount": 150
+    },
+    {
+      "text": "超速罰款：繳付 HK$15。",
+      "action": "money",
+      "amount": -15
+    },
+    {
+      "text": "海底隧道通車，收取 HK$100。",
+      "action": "money",
+      "amount": 100
+    }
+  ],
+  "community": [
+    {
+      "text": "前進至{space}，領取 HK$300。",
+      "action": "move",
+      "target": 0,
+      "collectGo": true
+    },
+    {
+      "text": "銀行錯誤，存入 HK$200。",
+      "action": "money",
+      "amount": 200
+    },
+    {
+      "text": "醫生費用，繳付 HK$50。",
+      "action": "money",
+      "amount": -50
+    },
+    {
+      "text": "股票出售收入 HK$50。",
+      "action": "money",
+      "amount": 50
+    },
+    {
+      "text": "出獄許可證。",
+      "action": "jailCard"
+    },
+    {
+      "text": "入獄，不得經過起點。",
+      "action": "jail"
+    },
+    {
+      "text": "香港旅發局假期基金到期，收取 HK$100。",
+      "action": "money",
+      "amount": 100
+    },
+    {
+      "text": "退稅，收取 HK$20。",
+      "action": "money",
+      "amount": 20
+    },
+    {
+      "text": "今日是你生日，向每位玩家收取 HK$10。",
+      "action": "collectEach",
+      "amount": 10
+    },
+    {
+      "text": "人壽保險到期，收取 HK$100。",
+      "action": "money",
+      "amount": 100
+    },
+    {
+      "text": "繳付醫院費用 HK$100。",
+      "action": "money",
+      "amount": -100
+    },
+    {
+      "text": "繳付學費 HK$50。",
+      "action": "money",
+      "amount": -50
+    },
+    {
+      "text": "收取顧問費 HK$25。",
+      "action": "money",
+      "amount": 25
+    },
+    {
+      "text": "街道維修評估：每間房屋 HK$40，每間酒店 HK$115。",
+      "action": "repairs",
+      "house": 40,
+      "hotel": 115
+    },
+    {
+      "text": "選美比賽亞軍，收取 HK$10。",
+      "action": "money",
+      "amount": 10
+    },
+    {
+      "text": "繼承遺產 HK$100。",
+      "action": "money",
+      "amount": 100
+    }
+  ]
+}

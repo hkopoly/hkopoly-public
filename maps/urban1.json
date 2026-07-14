@@ -1,0 +1,609 @@
+{
+  "id": "urban1",
+  "name": "市區 1",
+  "config": {
+    "GO_SALARY": 200,
+    "GO_LANDING_BONUS": 100,
+    "JAIL_POSITION": 10,
+    "JAIL_BAIL": 50,
+    "OWNABLE_SPACE_TYPES": [
+      "property",
+      "railroad",
+      "utility"
+    ],
+    "PLAYER_COLORS": [
+      "#C0DA5A",
+      "#FFC13F",
+      "#E88147",
+      "#BE4646",
+      "#5A99DA",
+      "#80E5F3",
+      "#0D8679",
+      "#6DDB59",
+      "#9A6E5E",
+      "#C63FA2",
+      "#FB7A9E",
+      "#7B57D3"
+    ]
+  },
+  "board": [
+    {
+      "id": 0,
+      "type": "go",
+      "subtitle": "經過 HK$200\n停留 HK$300",
+      "name": "起點"
+    },
+    {
+      "id": 1,
+      "type": "property",
+      "price": 60,
+      "rent": [
+        2,
+        10,
+        30,
+        90,
+        160,
+        250
+      ],
+      "name": "土瓜灣",
+      "group": "kowloonCity"
+    },
+    {
+      "id": 2,
+      "type": "community",
+      "name": "社區基金"
+    },
+    {
+      "id": 3,
+      "type": "property",
+      "price": 60,
+      "rent": [
+        4,
+        20,
+        60,
+        180,
+        320,
+        450
+      ],
+      "name": "紅磡",
+      "group": "kowloonCity"
+    },
+    {
+      "id": 4,
+      "type": "tax",
+      "amount": 150,
+      "name": "印花稅"
+    },
+    {
+      "id": 5,
+      "type": "railroad",
+      "price": 200,
+      "rent": [
+        25,
+        50,
+        100,
+        200
+      ],
+      "name": "港島線",
+      "group": "railroad"
+    },
+    {
+      "id": 6,
+      "type": "property",
+      "price": 100,
+      "rent": [
+        6,
+        30,
+        90,
+        270,
+        400,
+        550
+      ],
+      "name": "長沙灣",
+      "group": "shamShuiPo"
+    },
+    {
+      "id": 7,
+      "type": "chance",
+      "name": "機會"
+    },
+    {
+      "id": 8,
+      "type": "property",
+      "price": 100,
+      "rent": [
+        6,
+        30,
+        90,
+        270,
+        400,
+        550
+      ],
+      "name": "荔枝角",
+      "group": "shamShuiPo"
+    },
+    {
+      "id": 9,
+      "type": "property",
+      "price": 120,
+      "rent": [
+        8,
+        40,
+        100,
+        300,
+        450,
+        600
+      ],
+      "name": "深水埗",
+      "group": "shamShuiPo"
+    },
+    {
+      "id": 10,
+      "type": "jail",
+      "name": "探監",
+      "cellLabel": "入獄"
+    },
+    {
+      "id": 11,
+      "type": "property",
+      "price": 140,
+      "rent": [
+        10,
+        50,
+        150,
+        450,
+        625,
+        750
+      ],
+      "name": "油麻地",
+      "group": "yauTsimMong"
+    },
+    {
+      "id": 12,
+      "type": "utility",
+      "price": 150,
+      "name": "中電",
+      "group": "utility"
+    },
+    {
+      "id": 13,
+      "type": "property",
+      "price": 140,
+      "rent": [
+        10,
+        50,
+        150,
+        450,
+        625,
+        750
+      ],
+      "name": "旺角",
+      "group": "yauTsimMong"
+    },
+    {
+      "id": 14,
+      "type": "property",
+      "price": 160,
+      "rent": [
+        12,
+        60,
+        180,
+        500,
+        700,
+        900
+      ],
+      "name": "尖沙咀",
+      "group": "yauTsimMong"
+    },
+    {
+      "id": 15,
+      "type": "railroad",
+      "price": 200,
+      "rent": [
+        25,
+        50,
+        100,
+        200
+      ],
+      "name": "荃灣線",
+      "group": "railroad"
+    },
+    {
+      "id": 16,
+      "type": "property",
+      "price": 180,
+      "rent": [
+        14,
+        70,
+        200,
+        550,
+        750,
+        950
+      ],
+      "name": "牛頭角",
+      "group": "kwunTong"
+    },
+    {
+      "id": 17,
+      "type": "community",
+      "name": "社區基金"
+    },
+    {
+      "id": 18,
+      "type": "property",
+      "price": 180,
+      "rent": [
+        14,
+        70,
+        200,
+        550,
+        750,
+        950
+      ],
+      "name": "藍田",
+      "group": "kwunTong"
+    },
+    {
+      "id": 19,
+      "type": "property",
+      "price": 200,
+      "rent": [
+        16,
+        80,
+        220,
+        600,
+        800,
+        1000
+      ],
+      "name": "觀塘",
+      "group": "kwunTong"
+    },
+    {
+      "id": 20,
+      "type": "parking",
+      "name": "免費泊車"
+    },
+    {
+      "id": 21,
+      "type": "property",
+      "price": 220,
+      "rent": [
+        18,
+        90,
+        250,
+        700,
+        875,
+        1050
+      ],
+      "name": "鰂魚涌",
+      "group": "eastern"
+    },
+    {
+      "id": 22,
+      "type": "chance",
+      "name": "機會"
+    },
+    {
+      "id": 23,
+      "type": "property",
+      "price": 220,
+      "rent": [
+        18,
+        90,
+        250,
+        700,
+        875,
+        1050
+      ],
+      "name": "北角",
+      "group": "eastern"
+    },
+    {
+      "id": 24,
+      "type": "property",
+      "price": 240,
+      "rent": [
+        20,
+        100,
+        300,
+        750,
+        925,
+        1100
+      ],
+      "name": "太古",
+      "group": "eastern"
+    },
+    {
+      "id": 25,
+      "type": "railroad",
+      "price": 200,
+      "rent": [
+        25,
+        50,
+        100,
+        200
+      ],
+      "name": "東鐵線",
+      "group": "railroad"
+    },
+    {
+      "id": 26,
+      "type": "property",
+      "price": 260,
+      "rent": [
+        22,
+        110,
+        330,
+        800,
+        975,
+        1150
+      ],
+      "name": "上環",
+      "group": "centralWestern"
+    },
+    {
+      "id": 27,
+      "type": "property",
+      "price": 260,
+      "rent": [
+        22,
+        110,
+        330,
+        800,
+        975,
+        1150
+      ],
+      "name": "金鐘",
+      "group": "centralWestern"
+    },
+    {
+      "id": 28,
+      "type": "utility",
+      "price": 150,
+      "name": "港燈",
+      "group": "utility"
+    },
+    {
+      "id": 29,
+      "type": "property",
+      "price": 280,
+      "rent": [
+        24,
+        120,
+        360,
+        850,
+        1025,
+        1200
+      ],
+      "name": "中環",
+      "group": "centralWestern"
+    },
+    {
+      "id": 30,
+      "type": "gotojail",
+      "name": "即時入獄"
+    },
+    {
+      "id": 31,
+      "type": "property",
+      "price": 300,
+      "rent": [
+        26,
+        130,
+        390,
+        900,
+        1100,
+        1275
+      ],
+      "name": "跑馬地",
+      "group": "wanChai"
+    },
+    {
+      "id": 32,
+      "type": "property",
+      "price": 300,
+      "rent": [
+        26,
+        130,
+        390,
+        900,
+        1100,
+        1275
+      ],
+      "name": "灣仔",
+      "group": "wanChai"
+    },
+    {
+      "id": 33,
+      "type": "community",
+      "name": "社區基金"
+    },
+    {
+      "id": 34,
+      "type": "property",
+      "price": 320,
+      "rent": [
+        28,
+        140,
+        420,
+        950,
+        1150,
+        1300
+      ],
+      "name": "銅鑼灣",
+      "group": "wanChai"
+    },
+    {
+      "id": 35,
+      "type": "railroad",
+      "price": 200,
+      "rent": [
+        25,
+        50,
+        100,
+        200
+      ],
+      "name": "東涌線",
+      "group": "railroad"
+    },
+    {
+      "id": 36,
+      "type": "chance",
+      "name": "機會"
+    },
+    {
+      "id": 37,
+      "type": "property",
+      "price": 350,
+      "rent": [
+        35,
+        175,
+        500,
+        1100,
+        1300,
+        1500
+      ],
+      "name": "赤柱",
+      "group": "southern"
+    },
+    {
+      "id": 38,
+      "type": "tax",
+      "amount": 75,
+      "name": "差餉"
+    },
+    {
+      "id": 39,
+      "type": "property",
+      "price": 400,
+      "rent": [
+        50,
+        200,
+        600,
+        1400,
+        1700,
+        2000
+      ],
+      "name": "淺水灣",
+      "group": "southern"
+    }
+  ],
+  "groups": {
+    "kowloonCity": {
+      "id": "kowloonCity",
+      "name": "九龍城",
+      "color": "#dc242c",
+      "icon": "/icons/hk_18d_kc.webp",
+      "spaceIds": [
+        1,
+        3
+      ],
+      "houseCost": 50
+    },
+    "shamShuiPo": {
+      "id": "shamShuiPo",
+      "name": "深水埗",
+      "color": "#04642c",
+      "icon": "/icons/hk_18d_ssp.webp",
+      "spaceIds": [
+        6,
+        8,
+        9
+      ],
+      "houseCost": 50
+    },
+    "yauTsimMong": {
+      "id": "yauTsimMong",
+      "name": "油尖旺",
+      "color": "#e44404",
+      "icon": "/icons/hk_18d_ytm.webp",
+      "spaceIds": [
+        11,
+        13,
+        14
+      ],
+      "houseCost": 100
+    },
+    "kwunTong": {
+      "id": "kwunTong",
+      "name": "觀塘",
+      "color": "#149ce4",
+      "icon": "/icons/hk_18d_kt.webp",
+      "spaceIds": [
+        16,
+        18,
+        19
+      ],
+      "houseCost": 100
+    },
+    "eastern": {
+      "id": "eastern",
+      "name": "東區",
+      "color": "#e42424",
+      "icon": "/icons/hk_18d_east.webp",
+      "spaceIds": [
+        21,
+        23,
+        24
+      ],
+      "houseCost": 150
+    },
+    "centralWestern": {
+      "id": "centralWestern",
+      "name": "中西區",
+      "color": "#4c9c1c",
+      "icon": "/icons/hk_18d_central.webp",
+      "spaceIds": [
+        26,
+        27,
+        29
+      ],
+      "houseCost": 150
+    },
+    "wanChai": {
+      "id": "wanChai",
+      "name": "灣仔",
+      "color": "#ec2c44",
+      "icon": "/icons/hk_18d_wc.webp",
+      "spaceIds": [
+        31,
+        32,
+        34
+      ],
+      "houseCost": 200
+    },
+    "southern": {
+      "id": "southern",
+      "name": "南區",
+      "color": "#247cc4",
+      "icon": "/icons/hk_18d_south.webp",
+      "spaceIds": [
+        37,
+        39
+      ],
+      "houseCost": 200
+    },
+    "railroad": {
+      "id": "railroad",
+      "name": "鐵路",
+      "color": "#2F4F4F",
+      "icon": "tram-front",
+      "spaceIds": [
+        5,
+        15,
+        25,
+        35
+      ]
+    },
+    "utility": {
+      "id": "utility",
+      "name": "公用事業",
+      "color": "#708090",
+      "icon": "zap",
+      "spaceIds": [
+        12,
+        28
+      ]
+    }
+  }
+}

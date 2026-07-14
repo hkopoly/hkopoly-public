@@ -1,0 +1,14 @@
+# Archives (itch.io upload zip is built locally)
+*.zip
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Misc
+.cache/
+*.local
