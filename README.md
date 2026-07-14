@@ -1,8 +1,6 @@
 <p align="center">
-  <img src="https://i.imgur.com/8dg4arx.png" alt="HKOPOLY">
+  <img src="https://i.imgur.com/BC7d6LQ.png" alt="HKOPOLY">
 </p>
-
-<br>
 
 **HKOPOLY** 係一款節奏爽快、玩法豐富嘅港版網頁大富翁。由深水埗到南區、粉嶺到大嶼山，HKOPOLY 滿載大家熟悉嘅香港特色！
 
@@ -90,4 +88,4 @@
 <br>
 
 [![⭐ Star on GitHub](https://img.shields.io/badge/⭐_Star_on_GitHub-C088A0?style=for-the-badge)](https://github.com/hkopoly/hkopoly-public)
-[![Report an Issue](https://img.shields.io/badge/Report_an_Issue-493856?style=for-the-badge)](https://github.com/hkopoly/hkopoly-public/issues)
+[![回報問題](https://img.shields.io/badge/回報問題-493856?style=for-the-badge)](https://github.com/hkopoly/hkopoly-public/issues)
