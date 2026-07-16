@@ -1,8 +1,8 @@
 {
   "id": "rural1",
-  "name": "新界及離島 1",
+  "name": "新界各區",
   "config": {
-    "GO_SALARY": 200,
+    "GO_SALARY": 100,
     "GO_LANDING_BONUS": 100,
     "JAIL_POSITION": 10,
     "JAIL_BAIL": 50,
@@ -30,13 +30,33 @@
     {
       "id": 0,
       "type": "go",
-      "subtitle": "經過 HK$200\n停留 HK$300",
+      "subtitle": "經過 HK$100\n停留 HK$200",
       "name": "起點"
     },
     {
       "id": 1,
       "type": "property",
-      "price": 60,
+      "price": 30,
+      "rent": [
+        1,
+        5,
+        15,
+        45,
+        80,
+        150
+      ],
+      "name": "梅窩",
+      "group": "island"
+    },
+    {
+      "id": 2,
+      "type": "community",
+      "name": "民政事務"
+    },
+    {
+      "id": 3,
+      "type": "property",
+      "price": 40,
       "rent": [
         2,
         10,
@@ -45,44 +65,24 @@
         160,
         250
       ],
-      "name": "粉嶺",
-      "group": "north"
-    },
-    {
-      "id": 2,
-      "type": "community",
-      "name": "社區基金"
-    },
-    {
-      "id": 3,
-      "type": "property",
-      "price": 60,
-      "rent": [
-        4,
-        20,
-        60,
-        180,
-        320,
-        450
-      ],
-      "name": "上水",
-      "group": "north"
+      "name": "南丫島",
+      "group": "island"
     },
     {
       "id": 4,
       "type": "tax",
-      "amount": 200,
+      "amount": 100,
       "name": "印花稅"
     },
     {
       "id": 5,
       "type": "railroad",
-      "price": 200,
+      "price": 100,
       "rent": [
-        25,
-        50,
-        100,
-        200
+        20,
+        40,
+        80,
+        160
       ],
       "name": "東鐵線",
       "group": "railroad"
@@ -90,49 +90,49 @@
     {
       "id": 6,
       "type": "property",
-      "price": 100,
+      "price": 50,
       "rent": [
-        6,
-        30,
-        90,
-        270,
-        400,
-        550
+        3,
+        15,
+        45,
+        135,
+        200,
+        300
       ],
-      "name": "大埔墟",
+      "name": "上水",
       "group": "taiPo"
     },
     {
       "id": 7,
       "type": "chance",
-      "name": "機會"
+      "name": "奇遇"
     },
     {
       "id": 8,
       "type": "property",
-      "price": 100,
+      "price": 50,
       "rent": [
-        6,
-        30,
-        90,
-        270,
-        400,
-        550
+        3,
+        15,
+        45,
+        135,
+        200,
+        300
       ],
-      "name": "太和",
+      "name": "粉嶺",
       "group": "taiPo"
     },
     {
       "id": 9,
       "type": "property",
-      "price": 120,
+      "price": 60,
       "rent": [
-        8,
-        40,
-        100,
-        300,
-        450,
-        600
+        4,
+        20,
+        50,
+        150,
+        240,
+        320
       ],
       "name": "大埔",
       "group": "taiPo"
@@ -146,79 +146,80 @@
     {
       "id": 11,
       "type": "property",
-      "price": 140,
+      "price": 70,
       "rent": [
-        10,
-        50,
-        150,
-        450,
-        625,
-        750
+        5,
+        25,
+        75,
+        200,
+        280,
+        375
       ],
-      "name": "沙田",
+      "name": "顯徑",
       "group": "shaTin"
     },
     {
       "id": 12,
       "type": "utility",
-      "price": 150,
+      "price": 80,
+      "rent": [2, 5],
       "name": "水務署",
       "group": "utility"
     },
     {
       "id": 13,
       "type": "property",
-      "price": 140,
+      "price": 70,
       "rent": [
-        10,
-        50,
-        150,
-        450,
-        625,
-        750
-      ],
-      "name": "馬鞍山",
-      "group": "shaTin"
-    },
-    {
-      "id": 14,
-      "type": "property",
-      "price": 160,
-      "rent": [
-        12,
-        60,
-        180,
-        500,
-        700,
-        900
+        5,
+        25,
+        75,
+        200,
+        280,
+        375
       ],
       "name": "火炭",
       "group": "shaTin"
     },
     {
+      "id": 14,
+      "type": "property",
+      "price": 80,
+      "rent": [
+        6,
+        30,
+        90,
+        250,
+        350,
+        450
+      ],
+      "name": "沙田",
+      "group": "shaTin"
+    },
+    {
       "id": 15,
       "type": "railroad",
-      "price": 200,
+      "price": 100,
       "rent": [
-        25,
-        50,
-        100,
-        200
+        20,
+        40,
+        80,
+        160
       ],
-      "name": "屯馬線",
+      "name": "馬鐵線",
       "group": "railroad"
     },
     {
       "id": 16,
       "type": "property",
-      "price": 180,
+      "price": 90,
       "rent": [
-        14,
-        70,
-        200,
-        550,
-        750,
-        950
+        7,
+        35,
+        100,
+        270,
+        360,
+        475
       ],
       "name": "元朗",
       "group": "yuenLong"
@@ -226,36 +227,36 @@
     {
       "id": 17,
       "type": "community",
-      "name": "社區基金"
+      "name": "民政事務"
     },
     {
       "id": 18,
       "type": "property",
-      "price": 180,
+      "price": 90,
       "rent": [
-        14,
-        70,
-        200,
-        550,
-        750,
-        950
+        7,
+        35,
+        100,
+        270,
+        360,
+        475
       ],
-      "name": "天水圍",
+      "name": "錦田",
       "group": "yuenLong"
     },
     {
       "id": 19,
       "type": "property",
-      "price": 200,
+      "price": 100,
       "rent": [
-        16,
-        80,
-        220,
-        600,
-        800,
-        1000
+        8,
+        40,
+        110,
+        300,
+        400,
+        500
       ],
-      "name": "錦田",
+      "name": "元朗",
       "group": "yuenLong"
     },
     {
@@ -266,62 +267,62 @@
     {
       "id": 21,
       "type": "property",
-      "price": 220,
+      "price": 110,
       "rent": [
-        18,
-        90,
-        250,
-        700,
-        875,
-        1050
+        9,
+        45,
+        120,
+        320,
+        420,
+        525
       ],
-      "name": "西貢",
-      "group": "saiKung"
+      "name": "汀九",
+      "group": "tsuenWan"
     },
     {
       "id": 22,
       "type": "chance",
-      "name": "機會"
+      "name": "奇遇"
     },
     {
       "id": 23,
       "type": "property",
-      "price": 220,
+      "price": 110,
       "rent": [
-        18,
-        90,
-        250,
-        700,
-        875,
-        1050
+        9,
+        45,
+        120,
+        320,
+        420,
+        525
       ],
-      "name": "清水灣",
-      "group": "saiKung"
+      "name": "深井",
+      "group": "tsuenWan"
     },
     {
       "id": 24,
       "type": "property",
-      "price": 240,
+      "price": 120,
       "rent": [
-        20,
-        100,
-        300,
-        750,
-        925,
-        1100
+        10,
+        50,
+        150,
+        330,
+        440,
+        550
       ],
-      "name": "將軍澳",
-      "group": "saiKung"
+      "name": "荃灣",
+      "group": "tsuenWan"
     },
     {
       "id": 25,
       "type": "railroad",
-      "price": 200,
+      "price": 100,
       "rent": [
-        25,
-        50,
-        100,
-        200
+        20,
+        40,
+        80,
+        160
       ],
       "name": "西鐵線",
       "group": "railroad"
@@ -329,14 +330,14 @@
     {
       "id": 26,
       "type": "property",
-      "price": 260,
+      "price": 130,
       "rent": [
-        22,
-        110,
-        330,
-        800,
-        975,
-        1150
+        11,
+        55,
+        160,
+        350,
+        460,
+        575
       ],
       "name": "屯門",
       "group": "tuenMun"
@@ -344,36 +345,37 @@
     {
       "id": 27,
       "type": "property",
-      "price": 260,
+      "price": 130,
       "rent": [
-        22,
-        110,
-        330,
-        800,
-        975,
-        1150
+        11,
+        55,
+        160,
+        350,
+        460,
+        575
       ],
-      "name": "屯門市中心",
+      "name": "黃金海岸",
       "group": "tuenMun"
     },
     {
       "id": 28,
       "type": "utility",
-      "price": 150,
+      "price": 80,
+      "rent": [2, 5],
       "name": "煤氣",
       "group": "utility"
     },
     {
       "id": 29,
       "type": "property",
-      "price": 280,
+      "price": 140,
       "rent": [
-        24,
-        120,
+        12,
+        60,
+        180,
         360,
-        850,
-        1025,
-        1200
+        480,
+        600
       ],
       "name": "兆康",
       "group": "tuenMun"
@@ -386,14 +388,14 @@
     {
       "id": 31,
       "type": "property",
-      "price": 300,
+      "price": 150,
       "rent": [
-        26,
-        130,
-        390,
-        900,
-        1100,
-        1275
+        13,
+        65,
+        200,
+        400,
+        520,
+        640
       ],
       "name": "葵涌",
       "group": "kwaiTsing"
@@ -401,14 +403,14 @@
     {
       "id": 32,
       "type": "property",
-      "price": 300,
+      "price": 150,
       "rent": [
-        26,
-        130,
-        390,
-        900,
-        1100,
-        1275
+        13,
+        65,
+        200,
+        400,
+        520,
+        640
       ],
       "name": "葵芳",
       "group": "kwaiTsing"
@@ -416,19 +418,19 @@
     {
       "id": 33,
       "type": "community",
-      "name": "社區基金"
+      "name": "民政事務"
     },
     {
       "id": 34,
       "type": "property",
-      "price": 320,
+      "price": 160,
       "rent": [
-        28,
-        140,
-        420,
-        950,
-        1150,
-        1300
+        14,
+        70,
+        210,
+        450,
+        575,
+        700
       ],
       "name": "青衣",
       "group": "kwaiTsing"
@@ -436,12 +438,12 @@
     {
       "id": 35,
       "type": "railroad",
-      "price": 200,
+      "price": 100,
       "rent": [
-        25,
-        50,
-        100,
-        200
+        20,
+        40,
+        80,
+        160
       ],
       "name": "輕鐵",
       "group": "railroad"
@@ -449,43 +451,43 @@
     {
       "id": 36,
       "type": "chance",
-      "name": "機會"
+      "name": "奇遇"
     },
     {
       "id": 37,
       "type": "property",
-      "price": 350,
+      "price": 180,
       "rent": [
-        35,
-        175,
-        500,
-        1100,
-        1300,
-        1500
+        20,
+        90,
+        250,
+        600,
+        700,
+        800
       ],
-      "name": "東涌",
-      "group": "islands"
+      "name": "西貢",
+      "group": "saiKung"
     },
     {
       "id": 38,
       "type": "tax",
-      "amount": 100,
+      "amount": 50,
       "name": "差餉"
     },
     {
       "id": 39,
       "type": "property",
-      "price": 400,
+      "price": 200,
       "rent": [
-        50,
-        200,
-        600,
-        1400,
-        1700,
-        2000
+        25,
+        100,
+        300,
+        700,
+        850,
+        1000
       ],
-      "name": "愉景灣",
-      "group": "islands"
+      "name": "清水灣",
+      "group": "saiKung"
     }
   ],
   "groups": {
@@ -498,7 +500,7 @@
         1,
         3
       ],
-      "houseCost": 50
+      "houseCost": 30
     },
     "taiPo": {
       "id": "taiPo",
@@ -510,7 +512,7 @@
         8,
         9
       ],
-      "houseCost": 50
+      "houseCost": 30
     },
     "shaTin": {
       "id": "shaTin",
@@ -522,7 +524,7 @@
         13,
         14
       ],
-      "houseCost": 100
+      "houseCost": 60
     },
     "yuenLong": {
       "id": "yuenLong",
@@ -534,19 +536,19 @@
         18,
         19
       ],
-      "houseCost": 100
+      "houseCost": 60
     },
-    "saiKung": {
-      "id": "saiKung",
-      "name": "西貢",
+    "tsuenWan": {
+      "id": "tsuenWan",
+      "name": "荃灣",
       "color": "#04ac9c",
-      "icon": "/icons/hk_18d_sk.webp",
+      "icon": "/icons/hk_18d_tw.webp",
       "spaceIds": [
         21,
         23,
         24
       ],
-      "houseCost": 150
+      "houseCost": 80
     },
     "tuenMun": {
       "id": "tuenMun",
@@ -558,7 +560,7 @@
         27,
         29
       ],
-      "houseCost": 150
+      "houseCost": 80
     },
     "kwaiTsing": {
       "id": "kwaiTsing",
@@ -570,18 +572,18 @@
         32,
         34
       ],
-      "houseCost": 200
+      "houseCost": 100
     },
-    "islands": {
-      "id": "islands",
-      "name": "離島",
+    "saiKung": {
+      "id": "saiKung",
+      "name": "西貢",
       "color": "#6c243c",
-      "icon": "/icons/hk_18d_island.webp",
+      "icon": "/icons/hk_18d_sk.webp",
       "spaceIds": [
         37,
         39
       ],
-      "houseCost": 200
+      "houseCost": 100
     },
     "railroad": {
       "id": "railroad",

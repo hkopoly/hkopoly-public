@@ -27,12 +27,12 @@
       "action": "nearestRailroad"
     },
     {
-      "text": "銀行派息 HK$50。",
+      "text": "恒生銀行派息 HK$50。",
       "action": "money",
       "amount": 50
     },
     {
-      "text": "出獄許可證。",
+      "text": "廉政公署撤銷控罪，獲得保釋收據。",
       "action": "jailCard"
     },
     {
@@ -41,17 +41,17 @@
       "spaces": 3
     },
     {
-      "text": "入獄，不得經過起點。",
+      "text": "廉政公署拘查，即時入獄。",
       "action": "jail"
     },
     {
-      "text": "一般維修：每間房屋 HK$25，每間酒店 HK$100。",
+      "text": "大廈圍板維修：每幢唐樓 HK$25，每幢高樓大廈 HK$100。",
       "action": "repairs",
       "house": 25,
       "hotel": 100
     },
     {
-      "text": "繳付貧民稅 HK$15。",
+      "text": "交通告票：違例泊車 HK$15。",
       "action": "money",
       "amount": -15
     },
@@ -61,17 +61,17 @@
       "target": 18
     },
     {
-      "text": "你當選主席，向每位玩家支付 HK$50。",
+      "text": "當選業主立案法團主席，向每位玩家支付 HK$50。",
       "action": "payEach",
       "amount": 50
     },
     {
-      "text": "樓宇貸款到期，收取 HK$150。",
+      "text": "樓宇按揭現金回贈到期，收取 HK$150。",
       "action": "money",
       "amount": 150
     },
     {
-      "text": "超速罰款：繳付 HK$15。",
+      "text": "紅燈攝影機告票 HK$15。",
       "action": "money",
       "amount": -15
     },
@@ -79,6 +79,29 @@
       "text": "海底隧道通車，收取 HK$100。",
       "action": "money",
       "amount": 100
+    },
+    {
+      "text": "政府消費券入帳，收取 HK$50。",
+      "action": "money",
+      "amount": 50
+    },
+    {
+      "text": "炒賣一手樓盤佣金，收取 HK$100。",
+      "action": "money",
+      "amount": 100
+    },
+    {
+      "text": "馬會足球博彩中獎，收取 HK$50。",
+      "action": "money",
+      "amount": 50
+    },
+    {
+      "text": "八號風球生效，本輪租金撥入泊車彩金。",
+      "action": "typhoon"
+    },
+    {
+      "text": "金管局加息，贖回及建築成本上升。",
+      "action": "rateHike"
     }
   ],
   "community": [
@@ -89,78 +112,102 @@
       "collectGo": true
     },
     {
-      "text": "銀行錯誤，存入 HK$200。",
+      "text": "銀行轉帳故障多存入 HK$200。",
       "action": "money",
       "amount": 200
     },
     {
-      "text": "醫生費用，繳付 HK$50。",
+      "text": "私家醫院專科門診，繳付 HK$50。",
       "action": "money",
       "amount": -50
     },
     {
-      "text": "股票出售收入 HK$50。",
+      "text": "港股短線獲利 HK$50。",
       "action": "money",
       "amount": 50
     },
     {
-      "text": "出獄許可證。",
+      "text": "法庭保釋，獲得保釋收據。",
       "action": "jailCard"
     },
     {
-      "text": "入獄，不得經過起點。",
+      "text": "涉嫌詐騙被拘，即時入獄。",
       "action": "jail"
     },
     {
-      "text": "香港旅發局假期基金到期，收取 HK$100。",
+      "text": "旅發局假期基金到期，收取 HK$100。",
       "action": "money",
       "amount": 100
     },
     {
-      "text": "退稅，收取 HK$20。",
+      "text": "薪俸稅退稅 HK$20。",
       "action": "money",
       "amount": 20
     },
     {
-      "text": "今日是你生日，向每位玩家收取 HK$10。",
+      "text": "新年逗利是，向每位玩家收取 HK$10。",
       "action": "collectEach",
       "amount": 10
     },
     {
-      "text": "人壽保險到期，收取 HK$100。",
+      "text": "強積金計劃到期提取 HK$100。",
       "action": "money",
       "amount": 100
     },
     {
-      "text": "繳付醫院費用 HK$100。",
+      "text": "私家醫院住院，繳付 HK$100。",
       "action": "money",
       "amount": -100
     },
     {
-      "text": "繳付學費 HK$50。",
+      "text": "國際學校學費 HK$50。",
       "action": "money",
       "amount": -50
     },
     {
-      "text": "收取顧問費 HK$25。",
+      "text": "政府外判顧問合約酬金 HK$25。",
       "action": "money",
       "amount": 25
     },
     {
-      "text": "街道維修評估：每間房屋 HK$40，每間酒店 HK$115。",
+      "text": "路政署道路挖掘工程：每幢唐樓 HK$40，每幢高樓大廈 HK$115。",
       "action": "repairs",
       "house": 40,
       "hotel": 115
     },
     {
-      "text": "選美比賽亞軍，收取 HK$10。",
+      "text": "香港小姐選美亞軍，收取 HK$10。",
       "action": "money",
       "amount": 10
     },
     {
-      "text": "繼承遺產 HK$100。",
+      "text": "唐樓祖屋業權繼承 HK$100。",
       "action": "money",
       "amount": 100
+    },
+    {
+      "text": "領取在職家庭津貼，收取 HK$100。",
+      "action": "money",
+      "amount": 100
+    },
+    {
+      "text": "購買居屋首期，繳付 HK$150。",
+      "action": "money",
+      "amount": -150
+    },
+    {
+      "text": "領取醫療券 HK$25。",
+      "action": "money",
+      "amount": 25
+    },
+    {
+      "text": "公屋輪候十年終上車，向每位玩家支付 HK$30。",
+      "action": "payEach",
+      "amount": 30
+    },
+    {
+      "text": "按揭利率上調，贖回及建築成本上升。",
+      "action": "rateHike"
     }
   ]
 }

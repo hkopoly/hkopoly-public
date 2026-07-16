@@ -74,7 +74,7 @@
 | `go` | 起點 | `name`, `subtitle`（可選，顯示經過/停留獎金） |
 | `property` | 地產 | `name`, `price`, `rent`, `group` |
 | `railroad` | 鐵路 | `name`, `price`, `rent`, `group: "railroad"` |
-| `utility` | 公用事業 | `name`, `price`, `group: "utility"` |
+| `utility` | 公用事業 | `name`, `price`, `rent`, `group: "utility"` |
 | `chance` | 機會卡 | `name` |
 | `community` | 社區基金 | `name` |
 | `tax` | 稅項 | `name`, `amount` |
@@ -89,6 +89,8 @@
 `[空地租金, 1 幢, 2 幢, 3 幢, 4 幢, 酒店]`
 
 鐵路 `rent` 為長度 4 的陣列，依擁有 1–4 條路線遞增。
+
+公用事業 `rent` 為骰子倍率陣列，依擁有間數遞增（例如 `[4, 10]` 表示 1 間 ×4、2 間 ×10；租金 = 移動骰子點數 × 倍率）。
 
 ---
 

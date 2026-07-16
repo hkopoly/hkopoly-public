@@ -1,6 +1,6 @@
 {
   "id": "urban1",
-  "name": "市區 1",
+  "name": "港九核心",
   "config": {
     "GO_SALARY": 200,
     "GO_LANDING_BONUS": 100,
@@ -51,7 +51,7 @@
     {
       "id": 2,
       "type": "community",
-      "name": "社區基金"
+      "name": "民政事務"
     },
     {
       "id": 3,
@@ -105,7 +105,7 @@
     {
       "id": 7,
       "type": "chance",
-      "name": "機會"
+      "name": "風水"
     },
     {
       "id": 8,
@@ -162,6 +162,7 @@
       "id": 12,
       "type": "utility",
       "price": 150,
+      "rent": [4, 10],
       "name": "中電",
       "group": "utility"
     },
@@ -226,7 +227,7 @@
     {
       "id": 17,
       "type": "community",
-      "name": "社區基金"
+      "name": "民政事務"
     },
     {
       "id": 18,
@@ -281,7 +282,7 @@
     {
       "id": 22,
       "type": "chance",
-      "name": "機會"
+      "name": "風水"
     },
     {
       "id": 23,
@@ -360,6 +361,7 @@
       "id": 28,
       "type": "utility",
       "price": 150,
+      "rent": [4, 10],
       "name": "港燈",
       "group": "utility"
     },
@@ -416,7 +418,7 @@
     {
       "id": 33,
       "type": "community",
-      "name": "社區基金"
+      "name": "民政事務"
     },
     {
       "id": 34,
@@ -449,7 +451,7 @@
     {
       "id": 36,
       "type": "chance",
-      "name": "機會"
+      "name": "風水"
     },
     {
       "id": 37,
