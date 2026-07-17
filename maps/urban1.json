@@ -11,6 +11,11 @@
       "railroad",
       "utility"
     ],
+    "UTILITY_RENT_MULTIPLIERS": [
+      4,
+      10
+    ],
+    "UTILITY_FALLBACK_DICE": 7,
     "PLAYER_COLORS": [
       "#C0DA5A",
       "#FFC13F",
@@ -72,7 +77,7 @@
       "id": 4,
       "type": "tax",
       "amount": 150,
-      "name": "印花稅"
+      "name": "利得稅"
     },
     {
       "id": 5,
@@ -162,7 +167,10 @@
       "id": 12,
       "type": "utility",
       "price": 150,
-      "rent": [4, 10],
+      "rent": [
+        4,
+        10
+      ],
       "name": "中電",
       "group": "utility"
     },
@@ -361,7 +369,10 @@
       "id": 28,
       "type": "utility",
       "price": 150,
-      "rent": [4, 10],
+      "rent": [
+        4,
+        10
+      ],
       "name": "港燈",
       "group": "utility"
     },
@@ -607,5 +618,221 @@
         28
       ]
     }
-  }
+  },
+  "chance": [
+    {
+      "text": "中環返工，返回{space}領取 HK${goLandingTotal}。",
+      "action": "move",
+      "target": 0,
+      "collectGo": true
+    },
+    {
+      "text": "旺角女人街掃貨，前往{space}。如經過起點，領取 HK${goSalary}。",
+      "action": "move",
+      "target": 13
+    },
+    {
+      "text": "赤柱市集浮潛，前往{space}。如經過起點，領取 HK${goSalary}。",
+      "action": "move",
+      "target": 37
+    },
+    {
+      "text": "港鐵故障轉乘的士，前進至最近的港鐵線。租金加倍。",
+      "action": "nearestRailroad",
+      "payDouble": true
+    },
+    {
+      "text": "乘港鐵過海，前進至最近的港鐵線。",
+      "action": "nearestRailroad"
+    },
+    {
+      "text": "滙豐股息入帳 HK$50。",
+      "action": "money",
+      "amount": 50
+    },
+    {
+      "text": "廉政公署撤銷控罪，獲得保釋收據。",
+      "action": "jailCard"
+    },
+    {
+      "text": "紅的兜錯路，後退三格。",
+      "action": "back",
+      "spaces": 3
+    },
+    {
+      "text": "警務處反詐騙行動拘捕，即時入獄。",
+      "action": "jail"
+    },
+    {
+      "text": "舊樓外牆圍板工程：每幢唐樓 HK$25，每幢高樓大廈 HK$100。",
+      "action": "repairs",
+      "house": 25,
+      "hotel": 100
+    },
+    {
+      "text": "咪錶違例泊車罰款 HK$15。",
+      "action": "money",
+      "amount": -15
+    },
+    {
+      "text": "觀塘工廈樓下茶餐廳，前往{space}。如經過起點，領取 HK${goSalary}。",
+      "action": "move",
+      "target": 18
+    },
+    {
+      "text": "當選業主立案法團主席，向每位玩家支付 HK$50。",
+      "action": "payEach",
+      "amount": 50
+    },
+    {
+      "text": "樓按現金回贈到期，收取 HK$150。",
+      "action": "money",
+      "amount": 150
+    },
+    {
+      "text": "隧道費電子繳費多扣 HK$15。",
+      "action": "money",
+      "amount": -15
+    },
+    {
+      "text": "公司年終花紅 HK$100。",
+      "action": "money",
+      "amount": 100
+    },
+    {
+      "text": "政府消費券入帳，收取 HK$50。",
+      "action": "money",
+      "amount": 50
+    },
+    {
+      "text": "豪宅二手成交佣金，收取 HK$100。",
+      "action": "money",
+      "amount": 100
+    },
+    {
+      "text": "馬會足球博彩中獎，收取 HK$50。",
+      "action": "money",
+      "amount": 50
+    },
+    {
+      "text": "八號風球生效，本輪租金不付予物主。",
+      "action": "typhoon",
+      "signal": 8
+    },
+    {
+      "text": "金管局加息，贖回及建築成本上升。",
+      "action": "rateHike"
+    }
+  ],
+  "community": [
+    {
+      "text": "報稅多退少補，前進至{space}，領取 HK${goLandingTotal}。",
+      "action": "move",
+      "target": 0,
+      "collectGo": true
+    },
+    {
+      "text": "銀行轉帳故障多存入 HK$200。",
+      "action": "money",
+      "amount": 200
+    },
+    {
+      "text": "養和醫院專科門診，繳付 HK$50。",
+      "action": "money",
+      "amount": -50
+    },
+    {
+      "text": "港股短線獲利 HK$50。",
+      "action": "money",
+      "amount": 50
+    },
+    {
+      "text": "法庭保釋，獲得保釋收據。",
+      "action": "jailCard"
+    },
+    {
+      "text": "支票跳票詐騙被拘，即時入獄。",
+      "action": "jail"
+    },
+    {
+      "text": "旅發局假期基金到期，收取 HK$100。",
+      "action": "money",
+      "amount": 100
+    },
+    {
+      "text": "薪俸稅退稅 HK$20。",
+      "action": "money",
+      "amount": 20
+    },
+    {
+      "text": "茶樓飲茶逐枱收利是，向每位玩家收取 HK$10。",
+      "action": "collectEach",
+      "amount": 10
+    },
+    {
+      "text": "強積金計劃到期提取 HK$100。",
+      "action": "money",
+      "amount": 100
+    },
+    {
+      "text": "私家醫院住院，繳付 HK$100。",
+      "action": "money",
+      "amount": -100
+    },
+    {
+      "text": "國際學校學費 HK$50。",
+      "action": "money",
+      "amount": -50
+    },
+    {
+      "text": "政府外判顧問合約酬金 HK$25。",
+      "action": "money",
+      "amount": 25
+    },
+    {
+      "text": "路政署道路挖掘工程：每幢唐樓 HK$40，每幢高樓大廈 HK$115。",
+      "action": "repairs",
+      "house": 40,
+      "hotel": 115
+    },
+    {
+      "text": "尖沙咀街檔兼職外快 HK$10。",
+      "action": "money",
+      "amount": 10
+    },
+    {
+      "text": "唐樓祖屋業權繼承 HK$100。",
+      "action": "money",
+      "amount": 100
+    },
+    {
+      "text": "領取在職家庭津貼，收取 HK$100。",
+      "action": "money",
+      "amount": 100
+    },
+    {
+      "text": "購買居屋首期，繳付 HK$150。",
+      "action": "money",
+      "amount": -150
+    },
+    {
+      "text": "領取醫療券 HK$25。",
+      "action": "money",
+      "amount": 25
+    },
+    {
+      "text": "公屋輪候十年終上車，向每位玩家支付 HK$30。",
+      "action": "payEach",
+      "amount": 30
+    },
+    {
+      "text": "十號風球生效，三輪租金不付予物主。",
+      "action": "typhoon",
+      "signal": 10
+    },
+    {
+      "text": "按揭利率上調，贖回及建築成本上升。",
+      "action": "rateHike"
+    }
+  ]
 }

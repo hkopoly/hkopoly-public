@@ -11,6 +11,11 @@
       "railroad",
       "utility"
     ],
+    "UTILITY_RENT_MULTIPLIERS": [
+      4,
+      10
+    ],
+    "UTILITY_FALLBACK_DICE": 7,
     "PLAYER_COLORS": [
       "#C0DA5A",
       "#FFC13F",
@@ -65,14 +70,14 @@
         160,
         250
       ],
-      "name": "南丫島",
+      "name": "東涌",
       "group": "island"
     },
     {
       "id": 4,
       "type": "tax",
       "amount": 100,
-      "name": "印花稅"
+      "name": "利得稅"
     },
     {
       "id": 5,
@@ -99,13 +104,13 @@
         200,
         300
       ],
-      "name": "上水",
-      "group": "taiPo"
+      "name": "古洞",
+      "group": "north"
     },
     {
       "id": 7,
       "type": "chance",
-      "name": "奇遇"
+      "name": "風水"
     },
     {
       "id": 8,
@@ -120,7 +125,7 @@
         300
       ],
       "name": "粉嶺",
-      "group": "taiPo"
+      "group": "north"
     },
     {
       "id": 9,
@@ -134,8 +139,8 @@
         240,
         320
       ],
-      "name": "大埔",
-      "group": "taiPo"
+      "name": "上水",
+      "group": "north"
     },
     {
       "id": 10,
@@ -155,14 +160,17 @@
         280,
         375
       ],
-      "name": "顯徑",
+      "name": "大圍",
       "group": "shaTin"
     },
     {
       "id": 12,
       "type": "utility",
       "price": 80,
-      "rent": [2, 5],
+      "rent": [
+        2,
+        5
+      ],
       "name": "水務署",
       "group": "utility"
     },
@@ -221,7 +229,7 @@
         360,
         475
       ],
-      "name": "元朗",
+      "name": "天水圍",
       "group": "yuenLong"
     },
     {
@@ -276,13 +284,13 @@
         420,
         525
       ],
-      "name": "汀九",
+      "name": "荃灣",
       "group": "tsuenWan"
     },
     {
       "id": 22,
       "type": "chance",
-      "name": "奇遇"
+      "name": "風水"
     },
     {
       "id": 23,
@@ -296,8 +304,8 @@
         420,
         525
       ],
-      "name": "深井",
-      "group": "tsuenWan"
+      "name": "太和",
+      "group": "taiPo"
     },
     {
       "id": 24,
@@ -311,8 +319,8 @@
         440,
         550
       ],
-      "name": "荃灣",
-      "group": "tsuenWan"
+      "name": "大埔",
+      "group": "taiPo"
     },
     {
       "id": 25,
@@ -361,7 +369,10 @@
       "id": 28,
       "type": "utility",
       "price": 80,
-      "rent": [2, 5],
+      "rent": [
+        2,
+        5
+      ],
       "name": "煤氣",
       "group": "utility"
     },
@@ -451,7 +462,7 @@
     {
       "id": 36,
       "type": "chance",
-      "name": "奇遇"
+      "name": "風水"
     },
     {
       "id": 37,
@@ -472,7 +483,7 @@
       "id": 38,
       "type": "tax",
       "amount": 50,
-      "name": "差餉"
+      "name": "地租"
     },
     {
       "id": 39,
@@ -486,31 +497,42 @@
         850,
         1000
       ],
-      "name": "清水灣",
+      "name": "將軍澳",
       "group": "saiKung"
     }
   ],
   "groups": {
-    "north": {
-      "id": "north",
-      "name": "北區",
+    "island": {
+      "id": "island",
+      "name": "離島",
       "color": "#14b4a4",
-      "icon": "/icons/hk_18d_north.webp",
+      "icon": "/icons/hk_18d_island.webp",
       "spaceIds": [
         1,
         3
       ],
       "houseCost": 30
     },
-    "taiPo": {
-      "id": "taiPo",
-      "name": "大埔",
+    "north": {
+      "id": "north",
+      "name": "北區",
       "color": "#04a454",
-      "icon": "/icons/hk_18d_tp.webp",
+      "icon": "/icons/hk_18d_north.webp",
       "spaceIds": [
         6,
         8,
         9
+      ],
+      "houseCost": 30
+    },
+    "taiPo": {
+      "id": "taiPo",
+      "name": "大埔",
+      "color": "#2a9d5c",
+      "icon": "/icons/hk_18d_tp.webp",
+      "spaceIds": [
+        23,
+        24
       ],
       "houseCost": 30
     },
@@ -544,9 +566,7 @@
       "color": "#04ac9c",
       "icon": "/icons/hk_18d_tw.webp",
       "spaceIds": [
-        21,
-        23,
-        24
+        21
       ],
       "houseCost": 80
     },
@@ -607,5 +627,221 @@
         28
       ]
     }
-  }
+  },
+  "chance": [
+    {
+      "text": "鄉議局開會，返回{space}領取 HK${goLandingTotal}。",
+      "action": "move",
+      "target": 0,
+      "collectGo": true
+    },
+    {
+      "text": "大埔墟墟市採購，前往{space}。如經過起點，領取 HK${goSalary}。",
+      "action": "move",
+      "target": 13
+    },
+    {
+      "text": "西貢海鮮街飲茶，前往{space}。如經過起點，領取 HK${goSalary}。",
+      "action": "move",
+      "target": 37
+    },
+    {
+      "text": "輕鐵飛站趕時間，前進至最近的港鐵線。租金加倍。",
+      "action": "nearestRailroad",
+      "payDouble": true
+    },
+    {
+      "text": "轉乘西鐵北上，前進至最近的港鐵線。",
+      "action": "nearestRailroad"
+    },
+    {
+      "text": "村屋天台種菜收成，收取 HK$25。",
+      "action": "money",
+      "amount": 25
+    },
+    {
+      "text": "鄉事局擔保保釋，獲得保釋收據。",
+      "action": "jailCard"
+    },
+    {
+      "text": "行山迷路走錯路，後退三格。",
+      "action": "back",
+      "spaces": 3
+    },
+    {
+      "text": "郊野公園違規燒烤被拘，即時入獄。",
+      "action": "jail"
+    },
+    {
+      "text": "村屋風水牆維修：每幢唐樓 HK$15，每幢高樓大廈 HK$50。",
+      "action": "repairs",
+      "house": 15,
+      "hotel": 50
+    },
+    {
+      "text": "單車違規罰款 HK$10。",
+      "action": "money",
+      "amount": -10
+    },
+    {
+      "text": "錦田街市掃貨，前往{space}。如經過起點，領取 HK${goSalary}。",
+      "action": "move",
+      "target": 18
+    },
+    {
+      "text": "擔任墟鎮會長，向每位玩家支付 HK$25。",
+      "action": "payEach",
+      "amount": 25
+    },
+    {
+      "text": "收地賠償金入帳，收取 HK$75。",
+      "action": "money",
+      "amount": 75
+    },
+    {
+      "text": "泊單車違例罰款 HK$10。",
+      "action": "money",
+      "amount": -10
+    },
+    {
+      "text": "落馬洲口岸開關慶典回贈，收取 HK$50。",
+      "action": "money",
+      "amount": 50
+    },
+    {
+      "text": "鄉郊消費券入帳，收取 HK$25。",
+      "action": "money",
+      "amount": 25
+    },
+    {
+      "text": "村屋轉讓佣金，收取 HK$50。",
+      "action": "money",
+      "amount": 50
+    },
+    {
+      "text": "馬場六合彩中小獎，收取 HK$25。",
+      "action": "money",
+      "amount": 25
+    },
+    {
+      "text": "八號風球生效，本輪租金不付予物主。",
+      "action": "typhoon",
+      "signal": 8
+    },
+    {
+      "text": "金管局加息，贖回及建築成本上升。",
+      "action": "rateHike"
+    }
+  ],
+  "community": [
+    {
+      "text": "領取鄉郊津貼，前進至{space}，領取 HK${goLandingTotal}。",
+      "action": "move",
+      "target": 0,
+      "collectGo": true
+    },
+    {
+      "text": "銀行轉帳故障多存入 HK$100。",
+      "action": "money",
+      "amount": 100
+    },
+    {
+      "text": "北區聯合醫院專科門診，繳付 HK$25。",
+      "action": "money",
+      "amount": -25
+    },
+    {
+      "text": "村屋短炒獲利 HK$25。",
+      "action": "money",
+      "amount": 25
+    },
+    {
+      "text": "鄉議會擔保保釋，獲得保釋收據。",
+      "action": "jailCard"
+    },
+    {
+      "text": "非法填海遭檢控，即時入獄。",
+      "action": "jail"
+    },
+    {
+      "text": "旅遊巴士牌照到期，收取 HK$50。",
+      "action": "money",
+      "amount": 50
+    },
+    {
+      "text": "差餉退還 HK$10。",
+      "action": "money",
+      "amount": 10
+    },
+    {
+      "text": "圍村拜年逐圍收利是，向每位玩家收取 HK$5。",
+      "action": "collectEach",
+      "amount": 5
+    },
+    {
+      "text": "強積金計劃到期提取 HK$50。",
+      "action": "money",
+      "amount": 50
+    },
+    {
+      "text": "區立醫院急症留院，繳付 HK$50。",
+      "action": "money",
+      "amount": -50
+    },
+    {
+      "text": "屯門官立中學學費 HK$25。",
+      "action": "money",
+      "amount": -25
+    },
+    {
+      "text": "發展局鄉郊顧問酬金 HK$15。",
+      "action": "money",
+      "amount": 15
+    },
+    {
+      "text": "渠務署渠務工程：每幢唐樓 HK$20，每幢高樓大廈 HK$60。",
+      "action": "repairs",
+      "house": 20,
+      "hotel": 60
+    },
+    {
+      "text": "花車巡遊司儀費 HK$5。",
+      "action": "money",
+      "amount": 5
+    },
+    {
+      "text": "祖屋丁權繼承 HK$50。",
+      "action": "money",
+      "amount": 50
+    },
+    {
+      "text": "領取在職家庭津貼，收取 HK$50。",
+      "action": "money",
+      "amount": 50
+    },
+    {
+      "text": "村屋首期訂金，繳付 HK$75。",
+      "action": "money",
+      "amount": -75
+    },
+    {
+      "text": "長者醫療券 HK$15。",
+      "action": "money",
+      "amount": 15
+    },
+    {
+      "text": "公屋派屋設宴，向每位玩家支付 HK$15。",
+      "action": "payEach",
+      "amount": 15
+    },
+    {
+      "text": "十號風球生效，三輪租金不付予物主。",
+      "action": "typhoon",
+      "signal": 10
+    },
+    {
+      "text": "按揭利率上調，贖回及建築成本上升。",
+      "action": "rateHike"
+    }
+  ]
 }
